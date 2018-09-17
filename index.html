@@ -1,8 +1,40 @@
 <!DOCTYPE html>
-
+<!-- Written by FishBlues -->
 <html>
-<head><title>Welcome Traveler</title></head>
-<body background="bgskele.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
+<head><title>Welcome Traveler</title>
+<img src="bgsbanner.png" alt="Haze Skele" style="width:50%;"></head>
+<body bgcolor="2a046d">
 
+<!-- SIDEBAR -->
+<div class="w3-sidebar w3-bar-block w3-black w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-orange w3-large">Close &times;</button>
+  <a href="http://severedhand.github.io/skele" class="w3-bar-item w3-button">HOME</a>
+  <a href="http://severedhand.github.io/virus" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="http://severedhand.github.io/virus" class="w3-bar-item w3-button">DISCOVERED LOGS</a>
+</div>
+
+<!-- PAGE -->
+<div class="w3-black">
+  <button class="w3-button w3-black w3-xlarge" onclick="w3_open()">&#9776;</button>
+</div>
+
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 </body>
 </html>
